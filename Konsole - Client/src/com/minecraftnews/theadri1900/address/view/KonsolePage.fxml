@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minecraftnews.theadri1900.address.view.KonsolePageController">
+   <children>
+      <Button fx:id="send" disable="true" layoutX="882.0" layoutY="543.0" mnemonicParsing="false" onMouseClicked="#onSendClicked" onMouseEntered="#onSendAir" onMouseExited="#onSendExit" onMousePressed="#onSendPressed" onMouseReleased="#onSendRelease" prefHeight="60.0" prefWidth="136.0" style="-fx-background-color: #0087ff; -fx-border-color: #0550f9;" text="SEND" textFill="WHITE" visible="false" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="command" disable="true" layoutX="5.0" layoutY="542.0" onKeyPressed="#onCommandKeyPressed" prefHeight="50.0" prefWidth="845.0" style="-fx-text-inner-color: #00aeff;" text="You can't send commands for the moment. Please Wait !" visible="false" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="monitor" editable="false" layoutX="14.0" layoutY="27.0" prefHeight="506.0" prefWidth="994.0" wrapText="true" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font>
+      </TextArea>
+      <ProgressBar fx:id="progress" layoutX="3.0" layoutY="547.0" prefHeight="50.0" prefWidth="537.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="460.0" />
+      <Label fx:id="infos" alignment="CENTER" layoutX="552.0" layoutY="547.0" prefHeight="50.0" prefWidth="448.0" style="-fx-border-color: black; -fx-background-color: #0087ff;" text="Waiting for configuration ..." textFill="WHITE" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Slider fx:id="sizeChoice" blockIncrement="1.0" layoutX="516.0" layoutY="7.0" max="25.0" min="11.0" prefHeight="14.0" prefWidth="481.0" value="16.0" AnchorPane.leftAnchor="516.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="7.0" />
+      <Label layoutX="483.0" layoutY="4.0" text="Size :" textFill="#0087ff" AnchorPane.leftAnchor="483.0" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="blackVersion" layoutX="4.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#onBlackVersionClick" prefHeight="17.0" prefWidth="98.0" text="Black Version" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="6.0" />
+      <Label layoutX="209.0" layoutY="5.0" text="Konsole client version alpha 0.0.1" textFill="#0087ff" AnchorPane.leftAnchor="209.0" AnchorPane.topAnchor="5.0" />
+   </children>
+</AnchorPane>

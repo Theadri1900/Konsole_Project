@@ -1,0 +1,9 @@
+name: Konsole
+version: 0.1.0
+author: Theadri1900
+description: Plugin cree pour le site Minecraft-News.fr / plugin created for the website Minecraft-news.fr
+website: http://wwww.minecraft-news.fr/
+main: com.minecraftnews.theadri1900.KonsoleServer
+database: false
+commands:
+     konsole:

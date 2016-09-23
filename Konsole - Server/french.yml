@@ -1,0 +1,28 @@
+# Voici le fichier de traduction de tous les messages du plugin Konsole Server !
+1: Plugin correctement charge !
+2: Des problemes ont survenus durant l'initialization du plugin : impossible de le charger.
+3: Erreur : Impossible de charger la langue mit dans le fichier de configuration. La langue par defaut a donc ete chargee.
+4: Erreur : le numero de port doit etre entre 1 et 65535
+5: Erreur : impossible de demarrer le serveur sur le port [PORTNUMBER]
+6: Listener actif ! En attente d'une connexion ...
+7: Nouvelle connexion de [IP], en attente d'authentification...
+8: Connexion perdu avec l'hote [IP] !
+9: Utilisateur [USER] connecte a la Konsole !
+10: [USER] deconnecte de la Konsole !
+11: Perte de connexion avec [USER]
+12: [USER] a envoye une commande : [COMMAND]
+13: Une erreur est survenu lors de la lecture du maximum d'essai de connexion. Automatiquement mit a 5 essais. Veuillez modifier le config.yml pour resoudre le probleme.
+14: WOOPS : l'hote [IP] a atteint le maximum de tentatives d'authentification ! Il est maintenant banni pour [TIME] secondes.
+15: Une erreur est survenu lors de la lecture du temps de ban lors d'un maximum d'essai de connexion. Automatiquement mit a 300 secondes. Veuillez modifier le config.yml pour resoudre le probleme.
+16: Une erreur est survenu lors de la lecture du temps avant de pardonner le nombre d'essais echouees. Automatiquement mit a 900 secondes. Veuillez modifier le config.yml pour resoudre le probleme.
+17: Un probleme est survenue lors du processus de verification de mise a jour. Code d'erreur : [CODE]
+18: Vous avez decide de ne pas envoyer de stats avec ce plugin. Nous comprenons ce choix mais gardez en tete que ces stats sont utiles pour l'auteur !
+19: Erreur survenue pendant la tentative de connexion au serveur de statistisques. Code d'erreur : [CODE]
+20: Une nouvelle version de ce plugin est disponible : [VERSION] ; recuperez la ici : [URLUPDATE]
+21: Il est conseille de toujours avoir la derniere version du plugin afin de ne pas avoir d'incompatibilite avec le logiciel client !
+22: Vous avez decide de ne pas verifier les mises a jours. Ceci est fortement deconseille : risques de failles de securite et d'incompatibilite.
+23: Une fuite memoire vient de se passer. Redemarrer votre serveur si vous voulez recuperer la memoire RAM et creer un ticket sur le bukkit dev s'il vous plait.
+24: Rechargement des plugins detecte. Preparation du plugin pour un rechargement...
+25: Re-chargement du serveur. Sachez que la commande "reload" n'est pas bien supportee et peut causer quelques soucis.
+26: Une erreur est survenu lors de la lecture du temps avant fin de session inconnue. Automatiquement mit a 45 secondes. Veuillez modifier le config.yml pour resoudre le probleme.
+27: Une erreur est survenu lors de la lecture du port d'ecoute. Port d'ecoute mit a 2199 . Veuillez modifier le config.yml pour resoudre le probleme.

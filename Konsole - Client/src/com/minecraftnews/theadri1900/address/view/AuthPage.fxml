@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="400.0" prefHeight="525.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minecraftnews.theadri1900.address.view.AuthPageController">
+   <children>
+      <Button fx:id="validate" alignment="CENTER" cache="true" defaultButton="true" layoutY="469.0" mnemonicParsing="false" onMouseClicked="#onConnectClick" onMouseEntered="#onConnectAir" onMouseExited="#onConnectExit" onMousePressed="#onConnectPressed" onMouseReleased="#onConnectRelease" prefHeight="56.0" prefWidth="401.0" style="-fx-background-color: #0087ff; -fx-border-color: #0550f9;" text="Connect" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="topImage" fitHeight="157.0" fitWidth="414.0" layoutX="-1.0" layoutY="-4.0" smooth="false">
+         <image>
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="153.0" prefHeight="17.0" prefWidth="400.0" style="-fx-background-color: #0087ff; -fx-padding: 5px;" text="Connection to a Konsole" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoUser" alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="264.0" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #0087ff; -fx-border-radius: 5px;" text="User : " textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="-1.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user" layoutX="91.0" layoutY="264.0" prefHeight="0.0" prefWidth="166.0" style="-fx-text-inner-color: #00aeff;" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="143.0">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label fx:id="infoPassword" alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="296.0" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #0087ff;" text="Password :" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="91.0" layoutY="296.0" onKeyPressed="#onPasswdPressed" prefHeight="25.0" prefWidth="166.0" style="-fx-text-inner-color: #00aeff;" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="143.0">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </PasswordField>
+      <CheckBox fx:id="advencedParam" layoutX="-1.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#onAdvencedParamClick" prefHeight="37.0" prefWidth="235.0" style="-fx-background-color: #0087ff; -fx-padding: 5px;" text="I want to modify advenced parameters" textFill="WHITE" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="166.0">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="infoPortServer" alignment="CENTER_RIGHT" disable="true" layoutX="-4.0" layoutY="370.0" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #0087ff;" text="Port server : " textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="-4.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoPortClient" alignment="CENTER_RIGHT" disable="true" layoutX="-4.0" layoutY="403.0" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #0087ff;" text="Port client : " textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="-4.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="portServer" disable="true" layoutX="133.0" layoutY="370.0" prefHeight="25.0" prefWidth="77.0" style="-fx-text-inner-color: #00aeff;" text="2199">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="portClient" disable="true" layoutX="133.0" layoutY="403.0" prefHeight="25.0" prefWidth="77.0" style="-fx-text-inner-color: #00aeff;" text="auto">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </TextField>
+      <ProgressIndicator fx:id="indicator" layoutX="178.0" layoutY="431.0" visible="false" />
+      <Label fx:id="infoLoading" alignment="CENTER" layoutX="96.0" layoutY="491.0" prefHeight="47.0" prefWidth="215.0" style="-fx-border-color: black; -fx-background-color: #0087ff;" text="Nothing." textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoRight" alignment="CENTER" contentDisplay="CENTER" layoutX="303.0" layoutY="264.0" lineSpacing="2.0" prefHeight="181.0" prefWidth="96.0" style="-fx-background-color: #0087ff; -fx-padding: 3px; -fx-border-color: black;" text="Please fill the form." textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.rightAnchor="1.0">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoIpServer" alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="201.0" prefHeight="37.0" prefWidth="89.0" style="-fx-background-color: #0087ff; -fx-border-radius: 5px;" text="IP :" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="-2.0">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ipServer" layoutX="91.0" layoutY="202.0" prefHeight="37.0" prefWidth="298.0" style="-fx-text-inner-color: #00aeff;" text="127.0.0.1" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="11.0">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

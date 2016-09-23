@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minecraftnews.theadri1900.address.view.ConfigKonsolePageController">
+   <children>
+      <Label fx:id="firstLabel" layoutX="24.0" layoutY="14.0" onMouseClicked="#onClickOnFirstLabel" prefHeight="80.0" prefWidth="549.0" style="-fx-background-color: #0087ff; -fx-border-color:white;" />
+      <Label fx:id="secondLabel" layoutX="24.0" layoutY="116.0" onMouseClicked="#onClickOnSecondLabel" prefHeight="80.0" prefWidth="549.0" style="-fx-background-color: #0087ff;" />
+      <Label fx:id="firdLabel" layoutX="24.0" layoutY="231.0" onMouseClicked="#onClickOnFirdLabel" prefHeight="80.0" prefWidth="549.0" style="-fx-background-color: #0087ff;" />
+      <Button fx:id="getKonsole" layoutX="434.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#onGetKonsoleClicked" onMouseEntered="#onGetKonsoleAir" onMouseExited="#onGetKonsoleExit" onMousePressed="#onGetKonsolePressed" onMouseReleased="#onGetKonsoleRelease" prefHeight="41.0" prefWidth="157.0" style="-fx-background-color: #0087ff; -fx-border-color: #0550f9;" text="Get the Konsole !" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="choiceSinceBegun" layoutX="54.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#onRadioChanged" selected="true" AnchorPane.leftAnchor="54.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="choice" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="choiceLastMessage" layoutX="54.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#onRadioChanged" toggleGroup="$choice" AnchorPane.leftAnchor="54.0" />
+      <RadioButton fx:id="choiceNow" layoutX="54.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#onRadioChanged" toggleGroup="$choice" AnchorPane.leftAnchor="54.0" />
+      <Label layoutX="97.0" layoutY="24.0" onMouseClicked="#onClickOnFirstLabel" prefHeight="60.0" prefWidth="457.0" text="I want to download all messages since the beginning of the server session" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="127.0" onMouseClicked="#onClickOnSecondLabel" prefHeight="60.0" prefWidth="146.0" text="I want to get only the" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberLastMessages" layoutX="243.0" layoutY="140.0" onKeyPressed="#onNumberMessageKeyPressed" onMouseClicked="#onClickOnSecondLabel" prefHeight="33.0" prefWidth="102.0" style="-fx-text-inner-color: #00aeff;" text="25">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="350.0" layoutY="128.0" onMouseClicked="#onClickOnSecondLabel" prefHeight="60.0" prefWidth="146.0" text="last messages" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="242.0" onMouseClicked="#onClickOnFirdLabel" prefHeight="60.0" prefWidth="457.0" text="I don't want to download previous server messages" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

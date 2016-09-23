@@ -1,0 +1,16 @@
+# Configuration File of Konsole. For more help : http://dev.bukkit.org/bukkit-plugins/konsole/pages/wiki-of-konsole-en/ | Aussi disponible en FR (voir wiki fr)
+lang: english
+port: 2199
+save_log_user: true
+nb_max_try_connect: 5
+nb_seconds_apologize: 900
+nb_seconds_ban: 300
+notify_update_avaiable: true
+nb_seconds_keep_session_time: 45
+users:
+  admin:
+    canSendCommand: true
+    password: pleaseChangeThis #Automaticly generated
+  operator:
+    canSendCommand: false
+    password: pleaseChangeThis #Automaticly generated

@@ -1,0 +1,28 @@
+# This is the english messages of the Konsole Server plugin !
+1: Plugin sucessfully enabled !
+2: Impossible to load plugin : some problems occured during initializing ...
+3: Error : Impossible to set the language defined on the configuration file. The default languague has been set.
+4: Error : port number must be between 1 and 65535
+5: Error : unable to set server at port [PORTNUMBER]
+6: Listener enabled ! Waiting for connection ...
+7: New connection from [IP], waiting for authentificating ...
+8: Connection lost with the host on [IP] !
+9: User [USER] connected to the Konsole
+10: [USER] disconnected from Konsole
+11: Connection lost with [USER]
+12: [USER] issued a command : [COMMAND]
+13: Error while reading the maximum try authentification tolerance. Automaticly set to 5 try. Please modify your config.yml to resolve the problem.
+14: WOOPS : the host [IP] reached the maximum try authentification tolerance !! He is now in jail for [TIME] seconds.
+15: Error while reading the ban time when maximum authentification tolerance is reached. Automaticly set to 300 seconds. Please modify your config.yml to resolve the problem.
+16: Error while reading the time before apologize authentification tolerance. Automaticly set to 900 seconds. Please modify your config.yml to resolve the problem.
+17: Problem occured while checking avaiable update. Error code : [CODE]
+18: You've deciced to do not share this plugin's stats. We understand this choice but keep in mind which that stats is very useful for the author.
+19: Error while contacting statistics server. Error code : [CODE]
+20: A new version of this plugin is avaiable : [VERSION] ; get it at [URLUPDATE]
+21: We recommend to keep this plugin updated in order to avoid incompatibility with the client software.
+22: You've decided to not check avaiable updates. Please activate update checking if you have incompatibilities problems with Konsole client
+23: A memory leak happened meanwhile reload process. Please restart your server if you want get back RAM and create a ticket on bukkit dev.
+24: Reload task detected. Preparing the plugin for reloading...
+25: You reload the server. Keep in mind which that plugin does not support well reloading and might cause troubles.
+26: Error while reading the time delay end  unknown session. Automaticly set to 45 seconds. Please modify your config.yml to resolve the problem.
+27: Error while reading the port. Please modify your config.yml to resolve the problem. Default port set to 2199.

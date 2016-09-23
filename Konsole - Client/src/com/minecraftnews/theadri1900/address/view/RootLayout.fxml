@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minecraftnews.theadri1900.address.view.RootLayoutController">
+   <top>
+      <MenuBar fx:id="menuBar" prefHeight="27.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleDisconnect" text="Disconnect" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Feel free">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleBukkitDev" text="Bukkit dev page" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleDonate" text="Donate" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Check update !">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleCheckUpdate" text="Just click here !" />
+               </items></Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
